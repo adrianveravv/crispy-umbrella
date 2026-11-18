@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Brasa Marina: cocina costera ecuatoriana. Explora el menú y pide por WhatsApp.">
+<title>Brasa Marina | Cocina costera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#"><span class="brand-icon">BM</span><span><b>BRASA MARINA</b><small>COCINA COSTERA</small></span></a>
+  <nav><a href="#menu">Menú</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+  <button class="cart-button" id="open-cart">Mi pedido <span id="cart-count">0</span></button>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><span class="eyebrow">SABORES DEL PACÍFICO ECUATORIANO</span>
+ <h1>El sabor de nuestra costa <em>en cada plato.</em></h1>
+ <p>Mariscos frescos, recetas con identidad y ese toque a la brasa que invita a quedarse.</p>
+ <a class="button" href="#menu">Explorar menú ↓</a></div>
+ <span class="hero-caption">✦ Hecho para disfrutar sin prisa</span>
+</section>
+<section class="intro wrap" id="nosotros"><div><span class="eyebrow">BIENVENIDOS A BRASA MARINA</span><h2>Una mesa, muchos<br>sabores por descubrir.</h2></div>
+<p>Nos inspiramos en la cocina de la costa ecuatoriana para ofrecer platos llenos de sabor, preparados para compartir y disfrutar.</p></section>
+<section class="menu wrap" id="menu">
+ <div class="heading"><div><span class="eyebrow">NUESTRA CARTA</span><h2>Elige tu favorito</h2></div>
+ <label class="search">⌕ <input id="search" type="search" placeholder="Buscar un plato..."></label></div>
+ <div class="categories" id="categories">
+ <button class="active" data-category="Todos">Todos</button><button data-category="Entradas">Entradas</button>
+ <button data-category="Platos principales">Platos principales</button><button data-category="Bebidas">Bebidas</button></div>
+ <div class="products" id="products"></div>
+</section>
+<section class="banner"><div><span class="eyebrow">EL SABOR TE ESTÁ ESPERANDO</span><h2>Tu próximo plato<br>favorito está aquí.</h2></div><a class="button" href="#menu">Ver el menú ↗</a></section>
+</main>
+<footer id="contacto"><a class="brand" href="#"><span class="brand-icon">BM</span><span><b>BRASA MARINA</b><small>COCINA COSTERA</small></span></a><p>El sabor de nuestra costa en cada plato.</p><small>© <span id="year"></span> Brasa Marina · Menú digital demostrativo</small></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Carrito de compras">
+ <div class="drawer-head"><div><span class="eyebrow">BRASA MARINA</span><h2>Tu pedido</h2></div><button id="close-cart" class="close">×</button></div>
+ <div id="cart-items" class="cart-items"></div><div id="empty" class="empty"><b>✦</b><p>Tu carrito está vacío.</p><small>Agrega algo delicioso del menú.</small></div>
+ <div class="drawer-foot"><div class="total"><span>Total</span><b id="total">$0.00</b></div><button class="whatsapp" id="checkout">Pedir por WhatsApp ↗</button><small>El pedido se enviará para confirmar disponibilidad y entrega.</small></div>
+</aside>
+<script src="script.js"></script>
+</body></html>
